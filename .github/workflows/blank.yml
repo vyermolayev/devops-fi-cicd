@@ -40,4 +40,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_uanme }}/dockerfi:latest
+          tags: ${{ secrets.DOCKER_uname }}/dockerfi:latest
