@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World, after update and label fix!</h1>')
+  res.send('<h1>Hello World, after update and label fix!</h1><p>Now also available at fly.io</p>')
 })
 
 const PORT = 8080
