@@ -1,23 +1,22 @@
-# fly.toml app configuration file generated for devops-fi-cicd on 2026-05-24T07:20:40Z
+# fly.toml app configuration file generated for 1-16 on 2026-04-12T10:48:56+03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'devops-fi-cicd'
-primary_region = 'ams'
+primary_region = 'arn'
 
 [build]
 
 [http_service]
-  internal_port = 8080
-  force_https = true
+  internal_port = 80
+  force_https = false
   auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
+  memory = '256mb'
   cpus = 1
   memory_mb = 256
